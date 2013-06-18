@@ -1,7 +1,15 @@
 {
   "name": "HTTP - HTTPS Toggle",
   "description": "This extension toggles the current tab's URL between http and https.",
+  "manifest_version": 2,
+
   "version": "1.0",
+  "icons": {
+    "16": "toggle-16.png",
+    "48": "toggle-48.png",
+    "128": "toggle-128.png"
+  },
+
   "permissions": ["activeTab"],
   "background": {
     "scripts": ["background.js"],
@@ -9,7 +17,6 @@
   },
   "browser_action": {
     "default_title": "Toggle HTTP/HTTPS",
-    "default_icon": "toggle.png"
-  },
-  "manifest_version": 2
+    "default_icon": "toggle-32.png"
+  }
 }
